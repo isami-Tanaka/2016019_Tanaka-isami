@@ -226,10 +226,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			
 			//DrawRotaGraph(b.pos.x, b.pos.y,1.0f,angle, bulletH, true);
 			
-			if (isDebugMode) {
-				//’e‚Ì–{‘Ì(“–‚½‚è”»’è)
-				DrawCircle(b.pos.x, b.pos.y, bulletRadius, 0x0000ff, false, 3);
-			}
+			//if (isDebugMode) {
+			//	//’e‚Ì–{‘Ì(“–‚½‚è”»’è)
+			//	DrawCircle(b.pos.x, b.pos.y, bulletRadius, 0x0000ff, false, 3);
+			//}
 			//’e‚ðŽE‚·
 			if (b.pos.x + 16 < 0 || b.pos.x - 16 > 640 ||
 				b.pos.y + 24 < 0 || b.pos.y - 24 > 480) {
@@ -248,10 +248,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		int eidx = (frame / 4 % 2);
 		DrawRotaGraph(enemypos.x, enemypos.y, 2.0f, 0.0f, enemyH[eidx],true);
 
-		if (isDebugMode) {
-			//“G‚Ì–{‘Ì(“–‚½‚è”»’è)
-			DrawCircle(enemypos.x, enemypos.y, 5, 0xffffff, false, 3);
-		}
+		//if (isDebugMode) {
+		//	//“G‚Ì–{‘Ì(“–‚½‚è”»’è)
+		//	DrawCircle(enemypos.x, enemypos.y, 5, 0xffffff, false, 3);
+		//}
 		++frame;
 		ScreenFlip();
 		std::copy(std::begin(keystate), std::end(keystate), std::begin(lastkeystate));
